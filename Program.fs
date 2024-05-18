@@ -46,7 +46,7 @@ let lazycat () =
 //
 
 let rCat (file:string) =
-    let functions = [meow; (fun () -> dropped file ();); (fun () -> sit file ();)]
+    let functions = [meow; (fun () -> dropped file ();); (fun () -> sit file ();); lazycat]
 
     let rand = new System.Random()
 
